@@ -742,7 +742,7 @@ p.nominalBounds = new cjs.Rectangle(-99,-99,198.1,198);
 			evt.currentTarget.x = evt.stageX;
 		    evt.currentTarget.y = evt.stageY;
 		    stage.update(evt);
-		 });
+		 }, this);
 		
 		//refuses to release. doesn't recognize it.
 		dragger.on("pressup", function(evt){	//this function will be very custom, always
@@ -757,7 +757,7 @@ p.nominalBounds = new cjs.Rectangle(-99,-99,198.1,198);
 				alert("BOO its wrong, but YAY it works");
 			}
 		    stage.update(evt);
-		});
+		}, this);
 		
 		//Tests if two objects are intersecting
 		//Sees if obj1 passes through the first and last line of its
