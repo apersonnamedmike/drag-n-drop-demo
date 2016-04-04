@@ -14,7 +14,7 @@
 
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="Drag and Drop Test.js?1459801520978"></script>
+<script src="Drag and Drop Test.js"></script>
 <script>
 var canvas, stage, exportRoot;
 function init() {
@@ -27,7 +27,7 @@ function init() {
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", handleFileLoad);
 	loader.addEventListener("complete", handleComplete);
-	loader.loadFile({src:"images/Drag and Drop Test_atlas_.json?1459801520978", type:"spritesheet", id:"Drag and Drop Test_atlas_"}, true);
+	loader.loadFile({src:"images/Drag and Drop Test_atlas_.json", type:"spritesheet", id:"Drag and Drop Test_atlas_"}, true);
 	loader.loadManifest(lib.properties.manifest);
 }
 
